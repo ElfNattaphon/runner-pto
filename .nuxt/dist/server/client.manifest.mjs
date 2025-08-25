@@ -1,0 +1,1 @@
+export { default } from "file:///D:/disk2/Test/runplanner-pro-ui-v3-profile-update-fallback/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

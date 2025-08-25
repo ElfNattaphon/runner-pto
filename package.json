@@ -1,0 +1,42 @@
+{
+  "name": "runplanner-pro-ui-v3",
+  "private": true,
+  "type": "module",
+  "version": "0.4.0",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "postinstall": "nuxt prepare",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:validate": "prisma validate"
+  },
+  "dependencies": {
+    "nuxt": "^3.12.0",
+    "@pinia/nuxt": "^0.5.4",
+    "pinia": "^2.1.7",
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/interaction": "^6.1.15",
+    "@fullcalendar/vue3": "^6.1.15",
+    "zod": "^3.23.8",
+    "jose": "^5.2.4",
+    "ics": "^3.8.1",
+    "@prisma/client": "^5.22.0",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "prisma": "^5.22.0",
+    "typescript": "^5.4.5",
+    "vue-tsc": "^2.0.21",
+    "tailwindcss": "^3.4.10",
+    "postcss": "^8.4.41",
+    "autoprefixer": "^10.4.20",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.15",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@types/bcryptjs": "^2.4.6"
+  }
+}

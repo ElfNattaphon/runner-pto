@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+* { @apply transition-colors duration-200; }
+
+.btn-primary{ @apply inline-flex items-center rounded-xl bg-skyx-500 px-4 py-2 text-white hover:bg-skyx-600 shadow-soft; }
+.btn-accent{ @apply inline-flex items-center rounded-xl bg-run-500 px-4 py-2 text-ink-900 hover:bg-lime-300 shadow-soft; }
+.btn-ghost{ @apply inline-flex items-center rounded-xl border px-4 py-2 hover:bg-white/10; }
+.form-label{ @apply block text-sm font-medium text-gray-200 mb-1; }
+.form-input{ @apply w-full rounded-xl border-gray-700 bg-ink-800 text-gray-100 placeholder-gray-400 focus:border-skyx-500 focus:ring-skyx-500; }
+.chip{ @apply text-xs font-medium rounded-full px-2.5 py-1; }
+.chip-E{ @apply bg-skyx-100 text-skyx-800; }
+.chip-M{ @apply bg-skyx-200 text-skyx-900; }
+.chip-T{ @apply bg-amber-100 text-amber-800; }
+.chip-I{ @apply bg-violet-100 text-violet-800; }
+.chip-R{ @apply bg-rose-100 text-rose-800; }
+.chip-Rest{ @apply bg-gray-200 text-gray-800; }
+.chip-Race{ @apply bg-run-500 text-ink-900; }
+.chip-LR{ @apply bg-emerald-200 text-emerald-900; }
+
+.fc-theme-standard .fc-scrollgrid, .fc .fc-daygrid-day { border-color: rgba(255,255,255,0.08) !important; }
+.fc .fc-toolbar-title{ @apply text-gray-100; }
+.fc .fc-button{ @apply btn-ghost !important; }
+.fc .fc-daygrid-event{ @apply rounded-md px-2 py-1 text-xs font-medium; }
+.fc .evt-E{ @apply bg-skyx-500/20 text-skyx-200; }
+.fc .evt-M{ @apply bg-skyx-500/30 text-skyx-100; }
+.fc .evt-T{ @apply bg-amber-400/20 text-amber-200; }
+.fc .evt-I{ @apply bg-violet-500/20 text-violet-200; }
+.fc .evt-R{ @apply bg-rose-500/20 text-rose-200; }
+.fc .evt-Rest{ @apply bg-gray-500/20 text-gray-200; }
+.fc .evt-Race{ @apply bg-run-500 text-ink-900; }
+.fc .evt-LR{ @apply bg-emerald-400/20 text-emerald-200; }
+
+@media (max-width:640px){ .fc .fc-toolbar-title{font-size:1rem} .fc .fc-daygrid-day-number{font-size:.75rem} }

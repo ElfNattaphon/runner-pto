@@ -1,0 +1,78 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String         @id @default(cuid())
+  email        String         @unique
+  passwordHash String
+  createdAt    DateTime       @default(now())
+  profile      Profile?
+  goals        RaceGoal[]
+  plans        TrainingPlan[]
+}
+
+model Profile {
+  id             String    @id @default(cuid())
+  userId         String    @unique
+  user           User      @relation(fields: [userId], references: [id])
+  fullName       String?
+  dob            DateTime?
+  sex            String?
+  heightCm       Float?
+  weightKg       Float?
+  maxHR          Int?
+  thresholdHR    Int?
+  weeklyMileage  Int?
+  daysAvailable  String?
+  longRunDay     String?
+  best5kSeconds  Int?
+  best10kSeconds Int?
+  bestHMSeconds  Int?
+  bestMarSeconds Int?
+  ageYears       Int?
+  hrMethod       String?
+}
+
+model RaceGoal {
+  id          String        @id @default(cuid())
+  userId      String
+  user        User          @relation(fields: [userId], references: [id])
+  distanceKm  Float
+  raceDate    DateTime
+  goalSeconds Int?
+  createdAt   DateTime      @default(now())
+  plan        TrainingPlan? @relation(name: "GoalToPlan")
+}
+
+model TrainingPlan {
+  id        String    @id @default(cuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id])
+  goalId    String?   @unique
+  goal      RaceGoal? @relation(name: "GoalToPlan", fields: [goalId], references: [id])
+  startDate DateTime
+  weeks     Int
+  createdAt DateTime  @default(now())
+  workouts  Workout[]
+}
+
+model Workout {
+  id            String       @id @default(cuid())
+  planId        String
+  plan          TrainingPlan @relation(fields: [planId], references: [id])
+  date          DateTime
+  type          String
+  title         String
+  details       String?
+  distanceKm    Float?
+  durationMin   Int?
+  targetPaceSpm Int?
+  hrZone        String?
+  status        String?
+}
