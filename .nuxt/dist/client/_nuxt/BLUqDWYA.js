@@ -1,0 +1,1 @@
+import{_ as o,c as r,o as s,I as t}from"./C-ajaEJa.js";const c={},n={class:"bg-ink-800/70 backdrop-blur rounded-2xl border border-white/10 shadow-soft p-5"};function a(e,d){return s(),r("div",n,[t(e.$slots,"default")])}const l=o(c,[["render",a]]);export{l as C};

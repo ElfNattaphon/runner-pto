@@ -1,0 +1,263 @@
+const client_manifest = {
+  "_BLUqDWYA.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "BLUqDWYA.js",
+    "name": "Card",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_BgzNyDZV.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "BgzNyDZV.js",
+    "name": "v3",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_BjgJzNh4.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "BjgJzNh4.js",
+    "name": "TimeHMSInput.vue",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_BmBLMpJm.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "BmBLMpJm.js",
+    "name": "ui",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_CLgWZ-ys.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "CLgWZ-ys.js",
+    "name": "nuxt-link",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_DssN87-j.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "DssN87-j.js",
+    "name": "WorkoutTypeBadge.vue",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_TqiFiJ8V.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "TqiFiJ8V.js",
+    "name": "hr"
+  },
+  "layouts/default.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "B6VbykTc.js",
+    "name": "default",
+    "src": "layouts/default.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_CLgWZ-ys.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_BmBLMpJm.js"
+    ],
+    "css": [
+      "default.9hufaSV4.css"
+    ]
+  },
+  "default.9hufaSV4.css": {
+    "file": "default.9hufaSV4.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
+  "node_modules/nuxt/dist/app/components/error-404.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "Ct5USyHJ.js",
+    "name": "error-404",
+    "src": "node_modules/nuxt/dist/app/components/error-404.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_CLgWZ-ys.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_BgzNyDZV.js"
+    ],
+    "css": []
+  },
+  "error-404.DqZyKpgk.css": {
+    "file": "error-404.DqZyKpgk.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
+  "node_modules/nuxt/dist/app/components/error-500.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "DWbhhUPV.js",
+    "name": "error-500",
+    "src": "node_modules/nuxt/dist/app/components/error-500.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js",
+      "_BgzNyDZV.js"
+    ],
+    "css": []
+  },
+  "error-500.CZqNkBuR.css": {
+    "file": "error-500.CZqNkBuR.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
+  "node_modules/nuxt/dist/app/entry.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "C-ajaEJa.js",
+    "name": "entry",
+    "src": "node_modules/nuxt/dist/app/entry.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "layouts/default.vue",
+      "node_modules/nuxt/dist/app/components/error-404.vue",
+      "node_modules/nuxt/dist/app/components/error-500.vue"
+    ],
+    "_globalCSS": true
+  },
+  "pages/calendar.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "DOfLFHFl.js",
+    "name": "calendar",
+    "src": "pages/calendar.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js",
+      "_TqiFiJ8V.js",
+      "_BLUqDWYA.js",
+      "_DssN87-j.js",
+      "_BmBLMpJm.js"
+    ]
+  },
+  "pages/index.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "vcBnvZ0F.js",
+    "name": "index",
+    "src": "pages/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_CLgWZ-ys.js",
+      "_TqiFiJ8V.js",
+      "_BLUqDWYA.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_DssN87-j.js"
+    ]
+  },
+  "pages/login.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "CzzgEs53.js",
+    "name": "login",
+    "src": "pages/login.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_CLgWZ-ys.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_BLUqDWYA.js",
+      "_BmBLMpJm.js"
+    ]
+  },
+  "pages/planner.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "D6EhmIDs.js",
+    "name": "planner",
+    "src": "pages/planner.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_CLgWZ-ys.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_BLUqDWYA.js",
+      "_DssN87-j.js",
+      "_BjgJzNh4.js",
+      "_BmBLMpJm.js"
+    ]
+  },
+  "pages/profile.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "DcsulmKy.js",
+    "name": "profile",
+    "src": "pages/profile.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js",
+      "_TqiFiJ8V.js",
+      "_BLUqDWYA.js",
+      "_BjgJzNh4.js",
+      "_BmBLMpJm.js"
+    ]
+  },
+  "pages/register.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "Nyo9kNb5.js",
+    "name": "register",
+    "src": "pages/register.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_CLgWZ-ys.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_BLUqDWYA.js",
+      "_BmBLMpJm.js"
+    ]
+  }
+};
+
+export { client_manifest as default };
+//# sourceMappingURL=client.manifest.mjs.map
